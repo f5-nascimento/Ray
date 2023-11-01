@@ -1,91 +1,35 @@
-
 const express = require('express')
+const userService = require('./services/users')
 const app = express()
 const port = 3000
 app.use(express.json());
 
-let bd = [
-    {
-        id: "1",
-        name: "Felippe"
-    },
-    {
-        id: "2",
-        name: "Bruna"
-    }
-]
-
-//get users
 app.get('/users', (request, response) => {
-  response.json(bd);
+  response.json(userService.getUsers());
 })
 
 app.get('/users/:id', (request, response) =>{
-
-  // pegar o id da requisição
   const idUser = request.params.id;
-
-  // encontrar o usuario correspondente no bd
-  const user = bd.filter((usuario) => usuario.id === idUser);
-
-  //responder a requisição com as info do users
-  response.json(user);
-
+  response.json(userService.getUserById(idUser));
 })
 
 app.post("/users", (request, response) =>{
-
-  //pegar o corpo da requisição
   const body = request.body;
-
-  //criar um novo objeto a partir desse corpo
-  const newUser = {
-    id: (bd.length+1).toString(),
-    name: body.name
-  }
-
-  //adicionar esse novo objeto no banco
-  bd.push(newUser);
-
-  //responder a requisição com o banco completo
-  response.json(bd);
-
+  response.status(201).json(userService.createUser(body));
 })
 
 app.delete("/users/:id", (request, response)=>{
-
-  //pegar o id da requisição
   const idUser = request.params.id;
-
-  //percorrer o banco e encontrar quem tem o id da requisição
-  bd = bd.filter((usuario) => usuario.id != idUser);
-
-  //responder com o meu banco atualizado
-  response.json(bd);
-
+  userService.deleteUser(idUser);
+  response.json("Apagado com sucesso");
 })
 
 app.patch("/users/:id", (request, response) => {
-
-  //pegar o id da requisição
   const idUser = request.params.id;
-  //pegar o corpo da requisição
   const body = request.body;
-  //percorrer o banco
-  bd = bd.map((usuario) => {
-    if(usuario.id === idUser){
-      //atualizar as informações
-      usuario.name = body.name;
-    }
-    return usuario
-  })
-  //responder a requisição com o banco
-  response.json(bd);
-
+  userService.updateUser(idUser, body);
+  response.status(200).json();
 })
-
-
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
