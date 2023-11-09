@@ -25,6 +25,6 @@ Durante o desenvolvimento deste projeto, enfrentamos e superamos os seguintes de
 
 ## Deploy
 
-O projeto está disponível em [Ray-API no Render](https://ray-tz09.onrender.com/users)) para visualização.
+O projeto está disponível em [Ray-API no Render]((https://ray-tz09.onrender.com/users)) para visualização.
 
 Seja bem-vindo ao Ray-API, e sinta-se à vontade para contribuir ou entrar em contato conosco!
