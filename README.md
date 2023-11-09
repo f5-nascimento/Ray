@@ -15,7 +15,7 @@ O principal objetivo deste projeto é criar uma API usando os conceitos básicos
 - Git e GitHub: Para o controle de versão e hospedagem do código.
 - Postman: Para teste das rotas e funcionalidades da API.
 - Thunderclient: Para teste das rotas e funcionalidades da API.
-- Vercel: Para implantação e hospedagem.
+- Render: Para implantação e hospedagem.
 
 ## Desafios
 
@@ -25,6 +25,6 @@ Durante o desenvolvimento deste projeto, enfrentamos e superamos os seguintes de
 
 ## Deploy
 
-O projeto está disponível em [Ray-API no Vercel](https://sistok-murex.vercel.app/) para visualização.
+O projeto está disponível em [Ray-API no Render](https://ray-tz09.onrender.com/users)) para visualização.
 
 Seja bem-vindo ao Ray-API, e sinta-se à vontade para contribuir ou entrar em contato conosco!
