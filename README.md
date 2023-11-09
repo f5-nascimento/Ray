@@ -1,0 +1,30 @@
+# Ray-API
+
+## Descrição
+
+O "Ray-API" é uma API que gerencia os usuários do sistema, focado em Desenvolvimento Back End.
+
+## Objetivo
+
+O principal objetivo deste projeto é criar uma API usando os conceitos básicos de desenvolvimento Back End.
+
+## Tecnologias Utilizadas
+
+- Node: Para criação da API.
+- Express: Para a utilização do Node.
+- Git e GitHub: Para o controle de versão e hospedagem do código.
+- Postman: Para teste das rotas e funcionalidades da API.
+- Thunderclient: Para teste das rotas e funcionalidades da API.
+- Vercel: Para implantação e hospedagem.
+
+## Desafios
+
+Durante o desenvolvimento deste projeto, enfrentamos e superamos os seguintes desafios:
+
+- Implementar os métodos http para realizar o crud da aplicação.
+
+## Deploy
+
+O projeto está disponível em [Ray-API no Vercel](https://sistok-murex.vercel.app/) para visualização.
+
+Seja bem-vindo ao Ray-API, e sinta-se à vontade para contribuir ou entrar em contato conosco!
