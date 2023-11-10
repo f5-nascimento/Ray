@@ -11,10 +11,9 @@ O principal objetivo deste projeto é criar uma API usando os conceitos básicos
 ## Tecnologias Utilizadas
 
 - Node: Para criação da API.
-- Express: Para a utilização do Node.
+- Express: Para a construção de aplicativos web com Node.js.
 - Git e GitHub: Para o controle de versão e hospedagem do código.
-- Postman: Para teste das rotas e funcionalidades da API.
-- Thunderclient: Para teste das rotas e funcionalidades da API.
+- Postman e Thunderclient: Para teste das rotas e funcionalidades da API.
 - Render: Para implantação e hospedagem.
 
 ## Desafios
