@@ -20,7 +20,7 @@ O principal objetivo deste projeto é criar uma API usando os conceitos básicos
 
 Durante o desenvolvimento deste projeto, enfrentamos e superamos os seguintes desafios:
 
-- Implementar os métodos http para realizar o crud da aplicação.
+- Implementar os métodos HTTP para realizar o crud da aplicação.
 
 ## Deploy
 
