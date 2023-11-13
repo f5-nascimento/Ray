@@ -10,7 +10,7 @@ let bd = [
     ,
     {
       id: "3",
-      name: "Samantha"
+      name: "Samanta"
     }
   ];
 
